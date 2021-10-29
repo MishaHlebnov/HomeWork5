@@ -5,6 +5,7 @@ public class MainOOP {
         employee1.print_console();
 
         Employee[] employeesArray = new Employee[6];
+        for (int i = 0; i < employeesArray.length; i++) {
         employeesArray[0] = new Employee("Ковалев Тарас Александрович", "Уборщик",
                 "Kovalev@mail.ru", "8-999-20-22-23", 30000, 26);
         employeesArray[1] = new Employee("Сидоров Петр Андреевич", "Администратор",
@@ -17,7 +18,6 @@ public class MainOOP {
                 "unitaz@gmail.com", "8-950-553-54-23", 45000, 39);
         employeesArray[5] = new Employee("Сосновский Петр Станиславович", " Таксист",
                 "pushkagonka@gmail.ru", "8-900-800-70-60", 60000, 42);
-        for (int i = 0; i < employeesArray.length; i++) {
             employeesArray[i].print_console();
         }
     }
