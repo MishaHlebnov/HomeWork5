@@ -1,7 +1,7 @@
 public class Employee {
     private String initials;
 
-    public void setInitials(String name) {
+    public void setInitials(String initials) {
         this.initials = initials;
     }
 
@@ -48,5 +48,9 @@ public class Employee {
         setPhone(phone);
         setSalary(salary);
         setAge(age);
+    }
+    void print_console() {
+        System.out.printf("Сотрудник %s, должностью %s, email %s, номер телефона %s, зарплатой %d, возрастом %d год(года)\n ",
+                initials, position, email, phone, salary, age);
     }
 }
