@@ -24,6 +24,7 @@ public class Employee {
     }
 
     private int salary;
+
     public void setSalary(int salary) {
         if (salary >= 0) {
             this.salary = salary;
@@ -33,6 +34,7 @@ public class Employee {
     }
 
     private int age;
+
     public void setAge(int age) {
         if (age >= 0) {
             this.age = age;
@@ -49,8 +51,12 @@ public class Employee {
         setSalary(salary);
         setAge(age);
     }
+
     void print_console() {
-        System.out.printf("Сотрудник %s, должностью %s, email %s, номер телефона %s, зарплатой %d, возрастом %d год(года)\n ",
-                initials, position, email, phone, salary, age);
+        if (age >= 40) {
+            System.out.printf("Сотрудник %s, должностью %s, email %s, номер телефона %s, зарплатой %d, возрастом %d год(года)\n ",
+                    initials, position, email, phone, salary, age);
+            System.out.println();
+        }
     }
 }

@@ -17,5 +17,8 @@ public class MainOOP {
                 "unitaz@gmail.com", "8-950-553-54-23", 45000, 39);
         employeesArray[5] = new Employee("Сосновский Петр Станиславович", " Таксист",
                 "pushkagonka@gmail.ru", "8-900-800-70-60", 60000, 42);
+        for (int i = 0; i < employeesArray.length; i++) {
+            employeesArray[i].print_console();
+        }
     }
 }
