@@ -24,12 +24,29 @@ public class Employee {
     }
 
     private int salary;
-
     public void setSalary(int salary) {
         if (salary >= 0) {
             this.salary = salary;
         } else {
             System.out.println("Введена некорректная ЗП");
         }
+    }
+
+    private int age;
+    public void setAge(int age) {
+        if (age >= 0) {
+            this.age = age;
+        } else {
+            System.out.println("Введен некорректный возраст");
+        }
+    }
+
+    public Employee(String initials, String position, String email, String phone, int salary, int age) {
+        setInitials(initials);
+        setPosition(position);
+        setEmail(email);
+        setPhone(phone);
+        setSalary(salary);
+        setAge(age);
     }
 }
